@@ -34,3 +34,6 @@ class Pencilcase {
     }
 
 }
+
+
+export default Pencilcase;
