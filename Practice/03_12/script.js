@@ -52,4 +52,8 @@ console.log("Last Object",item3)
 
 
 console.log(item.color)
+console.log(item.length.length)
+item.newmeasurements(50,50,50)
+console.log(item)
+
 

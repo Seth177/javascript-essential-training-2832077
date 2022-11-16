@@ -27,7 +27,7 @@ class Pencilcase {
         this.zipOpen = lidStatus;
     }
 
-    newmeasurements(height,length){
+    newmeasurements(height,width,thick){
         this.length.top = height;
         this.length.length = width;
         this.length.thickness = thick;
