@@ -26,5 +26,19 @@ const backpack = {
 
   newname: function (another) {
     this.name = another;
+  },
+
+  newpocket: function(pocket) {
+    this.pocketNum= pocket;
   }
 };
+
+
+console.log("Before",backpack.name)
+console.log("Before",backpack.pocketNum)
+
+backpack.newname("special")
+backpack.newpocket(30)
+
+console.log("After", backpack.pocketNum)
+console.log("After",backpack.name)
