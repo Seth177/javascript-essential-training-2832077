@@ -8,6 +8,12 @@
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
 
+ const updatebox = (update) => {
+    let main = document.querySelector("main");
+    main.innerHTML = markup(box);
+    console.info(update);
+  };
+
 
 const box = {
     name:"Cool box",
@@ -23,10 +29,38 @@ const box = {
     lidOpen: false,
     toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
-    updateBackpack(`The lid has been open.`);
-    },
+    updatebox(`The lid has been open.`);
+    }
 
 
 
 
 };
+
+
+const markup = (backpack) => {
+    return `
+    <div>
+      <h3>${box.name}</h3>
+      <ul>
+        <li>Volume: ${box.volume}</li>
+        <li>Color: ${box.color}</li>
+        <li>Top lid: ${box.lidOpen ? "Open" : "Closed"}</li>
+      </ul>
+    </div>
+  `;
+  };
+
+const main = document.createElement("main");
+main.innerHTML = markup(box);
+document.body.appendChild(main);
+
+console.log("The object",box)
+console.log("Color of object is",box.color)
+console.log("Name of Object is",box.name)
+console.log("Sand",box.sand.right)
+
+console.log("Sand",box["sand"]);
+
+var number = "volume";
+console.log("This is the volume number",box[number]);
