@@ -26,4 +26,7 @@ console.log("The backpack object: ",backpack);
 console.log("The backpack property: ",backpack.pocketNum);
 console.log("The Straplength L:",backpack.strapLength.left);
 
+var query = "pocketNum";
+
 console.log("The backpack property: ",backpack["pocketNum"]);
+console.log("The backpack property: ",backpack[query]);
