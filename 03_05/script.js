@@ -22,4 +22,6 @@ const backpack = {
 };
 
 
-console.log(backpack);
+console.log("The backpack object: ",backpack);
+console.log("The backpack property: ",backpack.pocketNum);
+console.log("The Straplength L:",backpack.strapLength.left);
