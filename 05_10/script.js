@@ -60,3 +60,24 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+
+const items = `
+
+      <li><a href="#">Home</a></li>
+      <li><a href="#">content</a></li>
+      <li><a href="#">Backpack</a></li>
+      <li><a href="#">Promotions</a></li>
+      <li><a href="#">Reviews</a></li>
+  `;
+      
+
+
+
+const navigation = document.createElement("section")
+navigation.classList.add("selection");
+const navmenu = document.createElement("ul")
+navmenu.innerHTML = items
+navigation.append(navmenu)
+
+document.querySelector(".siteheader").append(navigation)
